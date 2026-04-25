@@ -16,6 +16,12 @@ pip install -r requirements.txt
 python scripts/clean_data.py
 ```
 
+## Run frontend (Streamlit)
+
+```bash
+streamlit run app.py
+```
+
 ## Files
 
 - Raw data: `data/raw/facilities_raw.csv`
