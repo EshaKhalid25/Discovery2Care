@@ -25,3 +25,13 @@ streamlit run app.py
 - Raw data: `data/raw/facilities_raw.csv`
 - Cleaned data: `data/processed/facilities_clean.csv`
 - Cleaning report: `data/processed/cleaning_report.json`
+
+## Optional Databricks integration (Agent Chat)
+
+Set these environment variables to enable Databricks-powered retrieval and LLM summary:
+
+- `DATABRICKS_HOST`
+- `DATABRICKS_TOKEN`
+- `VECTOR_SEARCH_INDEX`
+- `DATABRICKS_LLM_ENDPOINT` (optional, for LLM summary)
+- `MLFLOW_EXPERIMENT_PATH` (optional, for Databricks MLflow tracking)

@@ -2,7 +2,6 @@ import streamlit as st
 
 from src.services.data_loader import load_data
 from src.ui.tabs.agent_chat import render_agent_tab
-from src.ui.tabs.agent_trace import render_trace_tab
 from src.ui.tabs.crisis_map import render_map_tab
 from src.ui.tabs.facility_explorer import render_explorer_tab
 
@@ -88,8 +87,8 @@ def main():
         unsafe_allow_html=True,
     )
 
-    tab1, tab2, tab3, tab4 = st.tabs(
-        ["💬 Agent Chat", "🗺️ Crisis Map", "🩺 Facility Explorer", "⚙️ Agent Trace"]
+    tab1, tab2, tab3 = st.tabs(
+        ["💬 Agent Chat", "🗺️ Crisis Map", "🩺 Facility Explorer"]
     )
 
     with tab1:
@@ -98,8 +97,6 @@ def main():
         render_map_tab(df)
     with tab3:
         render_explorer_tab(df)
-    with tab4:
-        render_trace_tab()
 
 
 if __name__ == "__main__":
