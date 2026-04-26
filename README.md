@@ -1,7 +1,5 @@
 # Discovery2Care
 
-Hack Nation 5th Hackathon - Challenge 03.
-
 ## Setup
 
 ```bash
